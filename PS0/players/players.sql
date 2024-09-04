@@ -1,4 +1,3 @@
-BEGIN TRANSACTION;
 CREATE TABLE IF NOT EXISTS "players" (
     "id" SERIAL PRIMARY KEY,
     "first_name" TEXT,
