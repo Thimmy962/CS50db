@@ -7,8 +7,9 @@ CREATE TABLE IF NOT EXISTS Ingredients (
 -- donuts in in many-to-many relationship with ingredients, hence the bridge table donut_ingredients
 CREATE TABLE IF NOT EXISTS Donuts (
     "id" INTEGER,
-    "gluten_free" TEXT NOT NULL CHECK(length(gluten_free) >= 2 AND length(gluten_free) <= 3),
+    "gluten_free" TEXT NOT NULL CHECK(UPPER("gluten_free") IN ('YES', 'NO')),
     "price" REAL NOT NULL,
+    "order_id" INTEGER,
     PRIMARY KEY ("id"),
     FOREIGN KEY ("order_id") REFERENCES "Orders"("id") ON DELETE SET NULL -- References Orders table
 );
