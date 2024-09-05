@@ -1,2 +1,1 @@
-SELECT "title", "topic" FROM "episodes"
-    WHERE "topic" LIKE "%fraction%";
+SELECT "title", "topic" FROM "episodes" WHERE "topic" ILIKE '%fraction%';

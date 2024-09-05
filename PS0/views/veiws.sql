@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS "views" (
     "average_color" TEXT,
     "brightness" NUMERIC,
     "contrast" NUMERIC,
-    "entropy" NUMERIC,
+    "entropy" NUMERIC
 );
 INSERT INTO views VALUES(1,1,'The Great Wave off Kanagawa','神奈川沖浪裏','Hokusai','#999f8f',0.60999999999999998667,0.46999999999999997335,7.3700000000000001065);
 INSERT INTO views VALUES(2,2,'Fine Wind, Clear Morning','凱風快晴','Hokusai','#756c73',0.44000000000000000222,0.5,7.3099999999999996092);

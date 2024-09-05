@@ -1,2 +1,2 @@
-SELECT "title" FROM "episodes"
-    WHERE "season" = 6 AND "air_date" LIKE "2007-%"; 
+SELECT "title" FROM "episodes" 
+WHERE "season" = 6 AND "air_date" BETWEEN '2007-01-01' AND  '2008-01-01';

@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS "episodes" (
     "episode_in_season" INTEGER,
     "title" TEXT,
     "topic" TEXT,
-    "air_date" NUMERIC,
+    "air_date" DATE,
     "production_code" TEXT
 );
 INSERT INTO episodes VALUES(1,1,1,'Lost My Marbles','Navigation','2002-01-21','CYB001');
