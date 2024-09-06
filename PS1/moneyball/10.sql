@@ -1,5 +1,5 @@
 SELECT
-    "first_name", "last_name", "salary", "hr", "performances"."year"
+    "first_name", "last_name", "salary", "HR", "performances"."year"
 FROM 
     "players" 
     JOIN 
@@ -14,5 +14,5 @@ FROM
 ORDER BY
     "players"."id" ASC,
     "performances"."year" DESC,
-    "performances"."hr" DESC,
+    "performances"."HR" DESC,
     "salaries"."salary" DESC;

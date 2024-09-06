@@ -11,11 +11,11 @@ FROM
         AND "performances"."year" = "salaries"."year"
     WHERE 
         "performances"."year" = 2001 
-        AND "performances"."h" != 0
+        AND "performances"."H" != 0
     ORDER BY 
-        "salaries"."salary" / "performances"."h" ASC
+        "salaries"."salary" / "performances"."H" ASC
     LIMIT 10
-    )
+    ) AS "Low salary to H"
 INTERSECT
 SELECT "first_name", "last_name"
 FROM
@@ -28,8 +28,8 @@ FROM
         AND "performances"."year" = "salaries"."year"
     WHERE 
         "performances"."year" = 2001 
-        AND "performances"."rbi" != 0
+        AND "performances"."RBI" != 0
     ORDER BY 
-        "salaries"."salary" / "performances"."rbi" ASC
-    LIMIT 10)
+        "salaries"."salary" / "performances"."RBI" ASC
+    LIMIT 10) AS "Low salary to RBI"
 ORDER BY "last_name", "first_name";

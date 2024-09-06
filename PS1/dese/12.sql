@@ -7,7 +7,7 @@ LEFT JOIN
 LEFT JOIN
     "staff_evaluations" ON "districts"."id" = "staff_evaluations"."district_id"
 WHERE
-    "type" = "Public School District"
+    "type" = 'Public School District'
 AND
     "expenditures"."per_pupil_expenditure" > (
         SELECT AVG("per_pupil_expenditure") FROM "expenditures"

@@ -3,7 +3,7 @@ SELECT
 FROM 
     "schools"
 WHERE
-    "type" = "Public School"
+    "type" = 'Public School'
 GROUP BY 
     "city"
 HAVING

@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS "districts" (
     "type" TEXT,
     "city" TEXT,
     "state" TEXT,
-    "zip" TEXT,
+    "zip" TEXT
 );
 
 INSERT INTO districts VALUES(1,'Abby Kelley Foster Charter Public (District)','Charter District','Worcester','MA','01606');
@@ -3190,7 +3190,7 @@ CREATE TABLE IF NOT EXISTS "staff_evaluations" (
     "exemplary" NUMERIC,
     "proficient" NUMERIC,
     "needs_improvement" NUMERIC,
-    "unsatisfactory" NUMERIC,
+    "unsatisfactory" NUMERIC
 );
 
 INSERT INTO staff_evaluations VALUES(1,1,100,5.2999999999999998223,94.700000000000002838,0,0);

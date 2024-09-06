@@ -1,14 +1,14 @@
 SELECT 
-    t.name AS team_name,
-    SUM(p.H) AS total_hits
+    teams.name AS team_name,
+    SUM("performances"."H") AS total_hits
 FROM 
-    performances p
+    performances
 JOIN 
-    teams t ON p.team_id = t.id
+    teams ON performances.team_id = teams.id
 WHERE 
-    p.year = 2001
+    performances.year = 2001
 GROUP BY 
-    t.name
+    teams.name
 ORDER BY 
     total_hits DESC
 LIMIT 5;
