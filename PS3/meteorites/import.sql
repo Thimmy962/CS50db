@@ -50,11 +50,11 @@ CREATE TABLE IF NOT EXISTS meteorites (
 );
 
 -- Insert filtered data into final table
-INSERT INTO meteorites (id, name, class, mass, discovery, year, lat, long)
-SELECT id, name, class, mass, discovery, year, lat, long
+INSERT INTO meteorites (name, class, mass, discovery, year, lat, long)
+SELECT name, class, mass, discovery, year, lat, long
 FROM temp
 WHERE nametype != 'Relict'
-ORDER BY year, name;
+ORDER BY year ASC, name ASC;
 
 -- Drop the temporary table
 DROP TABLE temp;
